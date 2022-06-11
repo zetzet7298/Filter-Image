@@ -9,12 +9,12 @@
 + pip install numpy
 
 *Cấu trúc thư mục:
--album/ (Chứa bộ ảnh cần so sánh)
--album-pdf/ (Chứa bộ ảnh xuất từ file pdf)
--pdf.pdf (File pdf để scan ảnh)
--extract_image.py
--compare.py
--result/ (Chứa bộ ảnh sau khi so sánh)
+- album/ (Chứa bộ ảnh cần so sánh)
+- album-pdf/ (Chứa bộ ảnh xuất từ file pdf)
+- pdf.pdf (File pdf để scan ảnh)
+- extract_image.py
+- compare.py
+- result/ (Chứa bộ ảnh sau khi so sánh)
 
 *Các bước thực hiện chương trình
 - Đưa ảnh từ thư viện bỏ vào thư mục "album"
