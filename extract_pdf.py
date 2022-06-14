@@ -10,7 +10,6 @@ file = "pdf.pdf"
 
 # open the file
 pdf_file = fitz.open(file)
-
 # STEP 3
 # iterate over PDF pages
 print("Bắt đầu export")

@@ -1,6 +1,7 @@
 import cv2
 import os.path
 import numpy as np
+from time import sleep
 
 def center_crop(img, dim):
 	"""Returns center cropped image
@@ -81,7 +82,7 @@ def compare(filename1, filename2):
     print(len(kp1), len(kp2))
     print(percentImg1)
     #img3 = cv2.drawMatches(img1, kp1, img2, kp2, good_points, None)
-    if(percentImg1 >= 7):
+    if(percentImg1 >= 6):
         #cv2.imwrite("result2/" + filename2, img3)
         print("ok")
         cv2.imwrite("result/" + filename2, original)
@@ -98,4 +99,8 @@ directoryImg = 'album'
 for filename1 in os.listdir(directoryPdfImg):
     for filename2 in os.listdir(directoryImg):
         print("So sánh ảnh:" + filename1 + " với ảnh: " + filename2)
-        if(compare(filename1, filename2) == 1): break
+        if(compare(filename1, filename2) == 1):
+            break
+            sleep(0.1)
+        sleep(0.1)
+    sleep(0.1)
